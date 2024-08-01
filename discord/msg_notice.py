@@ -25,7 +25,7 @@ class MyClient(discord.Client):
 
         # monitor user A and DM user B
         if message.author.id == int(TARGET_USER_ID_A):
-            await user_b.send(f'{message.author.name} 在频道中发言了: {message.content}')
+            await user_b.send(f'{message.author.name} SAID: {message.content}')
 
         # when monitor some keywords, DM user B 
         if "@chris" in message.content or "@chris_inc" in message.content:
